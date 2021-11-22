@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      body {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        background: #f1f1f1;
+      }
+      .slider {
+        position: relative;
+        background: #ccc;
+        width: 900px;
+        height: 270px;
+        margin-top: 150px;
+      }
+      .next {
+        position: absolute;
+      }
+      .slider a {
+        display: flex;
+        width: 60px;
+        height: 45px;
+        background-color: rgba(0, 0, 0, 0.89);
+        z-index: 1000;
+        text-decoration: none;
+        text-align: center;
+        color: #fff;
+        line-height: 45px;
+        font-weight: bold;
+      }
+      .Next {
+        position: absolute;
+        right: 0px;
+        top: 120px;
+      }
+      .Prev {
+        position: absolute;
+        left: 0px;
+        top: 120px;
+      }
+      .slider img {
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slider">
+      <img src="../img/shoppe1.png" alt="" class="slide-item" number="0" />
+      <img
+        src="../img/shoppe2.png"
+        alt=""
+        class="slide-item"
+        number="1"
+        style="display: none"
+      />
+      <img
+        src="../img/shoppe3.png"
+        alt=""
+        class="slide-item"
+        number="2"
+        style="display: none"
+      />
+      <img
+        src="../img/shoppe4.png"
+        alt=""
+        class="slide-item"
+        number="3"
+        style="display: none"
+      />
+      <a href="#" class="Next">Next</a>
+      <a href="#" class="Prev">Prev</a>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+    <script>
+      $(() => {
+        $(".Next").click(function () {
+          changeImg("Next");
+        });
+        $(".Prev").click(function () {
+          changeImg("Prev");
+        });
+      });
+      function changeImg(type) {
+        let imgSelectVisible = $("img.slide-item:visible");
+        let imgVisible = parseInt(imgSelectVisible.attr("number"));
+
+        let eqNumber = type === "Next" ? imgVisible + 1 : imgVisible - 1;
+        if (imgVisible === 0) {
+          eqNumber = $(".slide-item").length - 1;
+        }
+        if (eqNumber >= $(".slide-item").length) {
+          eqNumber = 0;
+        }
+
+        $("img.slide-item").eq(eqNumber).fadeIn();
+        imgSelectVisible.fadeOut();
+      }
+    </script>
+  </body>
+</html>

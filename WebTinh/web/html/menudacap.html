@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Menu đa cấp</title>
+	<style>
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		body{
+			font-family: tahoma;
+			font-size: 20px;
+		}
+		#menu{
+			width: 650px; 
+			height: 40px;
+			background: #6d136a;
+			margin: 0px auto;		
+		}
+		ul.root > li{
+			list-style-type: none;
+			float: left;
+			position: relative;
+		}
+		ul.root > li > a{
+			text-decoration:  none;
+			color: #FFF;
+			padding: 0px 15px 0px 15px;
+			line-height: 40px;
+			display: block;
+		}
+		ul.root > li > a:hover{
+			background: orange;
+			color: red;
+			transition: ease-in 0.35s;
+			-moz-transition: ease-in 0.35;
+			-webkit-transition: ease-in 0.35;
+		}
+		ul.submenu{
+			width: 250px;
+			background: #6d136a;
+			min-height: 150px;
+			display: none;
+			position: absolute;
+		}
+		ul.submenu li{
+			list-style: none;
+		}
+		ul.submenu li a{
+			color: #FFF;
+			text-decoration: none;
+			display: block;
+			border-top: 1px solid #ccc;
+			list-style: 40px;
+			text-indent: 10px;
+		}
+		ul.root >li:hover ul.submenu{
+			display: block;
+			transition: ease-out 0.35s;
+			-moz-transition: ease-out 0.35;
+			-webkit-transition: ease-out 0.35;
+		}
+		ul.root li a:hover{
+			background: orange;
+			color: red;
+			transition: ease-in 0.35s;
+			-moz-transition: ease-in 0.35;
+			-webkit-transition: ease-in 0.35;
+		}
+	</style>
+</head>
+<body>
+	<div id="menu">
+		<ul class="root">
+			<li><a href="">Home</a></li>
+			<li><a href="">About</a></li>
+			<li><a href="">Products</a>
+				<ul class="submenu">
+					<li><a href="">Menu sub iteam 1</a></li>
+					<li><a href="">Menu sub iteam 2</a></li>
+					<li><a href="">Menu sub iteam 3</a></li>
+					<li><a href="">Menu sub iteam 4</a></li>
+					<li><a href="">Menu sub iteam 5</a></li>
+					<li><a href="">Menu sub iteam 6</a></li>
+					<li><a href="">Menu sub iteam 7</a></li>
+				</ul>
+			</li>
+			<li><a href="">Services</a></li>
+			<li><a href="">Contsct</a></li>
+		</ul>
+	</div>
+</body>
+</html>
