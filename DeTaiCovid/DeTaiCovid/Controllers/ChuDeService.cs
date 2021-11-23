@@ -21,13 +21,15 @@ namespace DeTaiCovid.Controllers
             ChuDe currentChuDe = DbContext.ChuDes.SingleOrDefault(x => x.ChuDeid == newChuDe.ChuDeid);
             if (currentChuDe == null)
             {
-                return false;
-            }
-            else
-            {
                 DbContext.ChuDes.Add(newChuDe);
                 DbContext.SaveChanges();
                 return true;
+              
+            }
+            else
+            {
+                return false;
+
             }
         }
 
@@ -49,26 +51,25 @@ namespace DeTaiCovid.Controllers
 
         public bool XoaChuDe(int ChuDeId)
         {
-            ChuDe chuDe = DbContext.ChuDes.SingleOrDefault(x => x.ChuDeid == ChuDeId);
-            BaiViet baiViet = DbContext.BaiViets.SingleOrDefault(X => X.BaiVietId == ChuDeId);
-            if (chuDe == null)
+            ChuDe currentChuDe = DbContext.ChuDes.SingleOrDefault(x => x.ChuDeid == ChuDeId);
+            List<BaiViet> lstBaiViet = DbContext.BaiViets.Where(x => x.ChuDeid == ChuDeId).ToList();//tim danh sach bai viet lien quan toi chu de do
+            if (currentChuDe == null)
             {
                 return false;
             }
-            else if (baiViet == null)
+            else if (lstBaiViet.Count>0)//neu lst bai viết co du lieu thi th xoa
             {
-                List<ChuDe> lstChuDe = DbContext.ChuDes.ToList();
-                for (int i = 0; i < lstChuDe.Count; i++)
+                for (int i = 0; i < lstBaiViet.Count; i++)
                 {
-                    if (lstChuDe[i].ChuDeid == ChuDeId)
+                    if (lstBaiViet[i].ChuDeid == ChuDeId)
                     {
-                        DbContext.ChuDes.Remove(lstChuDe[i]);
+                        DbContext.BaiViets.Remove(lstBaiViet[i]);
                         DbContext.SaveChanges();
                     }
                 }
             }
             //Xoa du lieu
-            DbContext.ChuDes.Remove(chuDe);
+            DbContext.ChuDes.Remove(currentChuDe);
             DbContext.SaveChanges();
             return true;
         }
