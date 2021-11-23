@@ -69,8 +69,7 @@ namespace DeTaiCovid.Controllers
             {
                 DbContext.Remove(CurrentBaiViet);
                 DbContext.SaveChanges();
-                CapNhapSoLuong(cu);
-
+                CapNhapSoLuong(currentChuDe);
                 return true;
             }
 
@@ -85,7 +84,6 @@ namespace DeTaiCovid.Controllers
                 {
                     dem++;
                 }
-
             }
             currentChuDe.SoLuongBaiViet = dem;
             DbContext.Update(currentChuDe);
