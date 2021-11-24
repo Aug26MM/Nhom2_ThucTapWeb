@@ -58,16 +58,16 @@ namespace DeTaiCovid.API
         }
 
         [HttpDelete]
-        public IActionResult XoaChuDe(int chuDe)
+        public IActionResult XoaChuDe(int ChuDeId)
         {
-            bool check = ChuDeService.XoaChuDe(chuDe);
+            bool check = ChuDeService.XoaChuDe(ChuDeId);
             if (check == true)
             {
-                return Ok($"xóa bài viêt {chuDe}  thành công");
+                return Ok($"xóa bài viêt {ChuDeId}  thành công");
             }
             else
             {
-                return BadRequest($"xóa bài viết  {chuDe}  Thất bại");
+                return BadRequest($"xóa bài viết  {ChuDeId}  Thất bại");
             }
         }
     }
