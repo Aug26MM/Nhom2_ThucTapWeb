@@ -204,6 +204,16 @@ body{
 	width: 650px;
 }
 
+#tintuc1 ul.tinhot li.img {
+	max-width: 654px;
+	max-height: 409px;
+}
+
+#tintuc1 ul.tinhot li.img img{
+	width: 100%;
+	height: 100%;
+}
+
 #tintuc1 ul.tinhot li a.hot-title{
 	text-decoration: none;
 	margin-top: 5px;
@@ -464,7 +474,13 @@ body{
 #tintuc6 ul li.img{
 	float: left;
 	height: 144px;
+	max-width: 230px;
+	max-height: 144px;
+}
 
+#tintuc6 ul li.img img{
+	max-width: 100%;
+	max-height: 100%;
 }
 
 #tintuc6 ul li.text{
@@ -577,6 +593,11 @@ body{
 	float: left;
 }
 
+#tintuc4-left ul.tintuc4-left1 li.img{
+	max-width: 520px;
+	max-height: 325px;
+}
+
 #tintuc4-left ul.tintuc4-left1 li.text{
 	width: 520px;
 	height: 135px;
@@ -595,6 +616,11 @@ body{
     font-family: sans-serif;
     padding-left: 10px;
     margin-left: -1px;
+}
+
+#tintuc4-left ul.tintuc4-left1 li.img img{
+	width: 100%;
+	height: 100%;
 }
 
 #tintuc4-left ul.tintuc4-left1 li.text a{
@@ -624,6 +650,11 @@ body{
     font-size: 14px;
     line-height: 140%;
     color: #444;
+}
+
+#tintuc4-right ul li.img{
+	max-width: 180px;
+	max-height: 113px;
 }
 
 #tintuc4-right ul.tintuc4-right1 li.img{
@@ -692,6 +723,11 @@ body{
 	margin-left: 10px;
 }
 
+#tintuc4-right ul li.img img{
+	width: 100%;
+	height: 100%;
+}
+
 #tintuc4-right ul.tintuc4-right3 li.text a{
 	display: block;
 	text-decoration: none;
@@ -746,6 +782,8 @@ body{
 }
 
 #tintuc8 ul.tintuc8-1 li{
+	max-width: 250px;
+	max-height: 156px;
 	float: left;
 }
 
@@ -758,6 +796,11 @@ body{
 	width: 250px;
 	height: 300px;
 	margin-left: 26px;
+}
+
+#tintuc8 ul.tintuc8-1 li img{
+	width: 100%;
+	height: 100%;
 }
 
 #tintuc8 ul.tintuc8-1 li a{
