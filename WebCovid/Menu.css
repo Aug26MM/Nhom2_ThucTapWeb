@@ -175,11 +175,44 @@ body{
 	padding: 0px;
 }
 
+#tintuc h3{
+	margin-top: 20px;
+	width: 1080px;
+	height: 40px;
+	border-bottom: 1px solid #e5e5e5;
+	margin-bottom: 20px;
+	margin-left: 220px;
+}
+
+#tintuc h3 a{
+	display: block;
+	text-decoration: none;
+	align-items: center;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 130%;
+    letter-spacing: .02em;
+    text-transform: uppercase;
+    color: #2e3192;
+    float: left;
+}
+
+#tintuc h3 a.title-menu{
+	margin-right: 20px;
+}
+
+#tintuc h3 a.dau{
+	width: 50px;
+	border: 1px solid #111;
+}
+
+
 #tintuc1{
 	margin-top: 20px;
-	border-bottom: 1px solid #2e3192;
 	width: 1080px;
-	height: 535px;
+	height: 635px;
 	margin-left: 220px;
 }
 
@@ -191,17 +224,18 @@ body{
 }
 
 #tintuc1 ul.tinhot{
-	width: 673px;
-	height: 520px;
+	width: 760px;
+	height: 635px;
+	border-bottom: 1px solid #e5e5e5;
 }
 
 #tintuc1 ul.dienbien{
-	width: 402px;
-	height: 520px;
+	width: 320px;
+	height: 635px;
 }
 
 #tintuc1 ul.tinhot li {
-	width: 650px;
+	width: 740px;
 }
 
 #tintuc1 ul.tinhot li a.hot-title{
@@ -234,7 +268,7 @@ body{
 }
 
 #tintuc1 ul.dienbien li {
-	width: 400px;
+	width: 310px;
 }
 
 #tintuc1 ul.dienbien h2.cm {
@@ -246,12 +280,11 @@ body{
 	overflow: scroll;
 	margin-top: 5px;
 	background-color: #f0f8ff;
-	height: 445px;
+	height: 530px;
 	border-left: 1px solid #e5e5e5;
 	border-top:  1px solid #e5e5e5;
 	text-align: justify;
 	padding: 5px;
-
 }
 
 ::-webkit-scrollbar {
@@ -285,7 +318,7 @@ body{
 }
 
 #tintuc1 ul.dienbien li.ct h2{
-	width: 397px;
+	width: 310px;
 	height: 40px;
 }
 
@@ -311,21 +344,21 @@ body{
 #tintuc1 ul.dienbien li.ct h2 p.day{
 	width: 108px;
 	font-family: sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 130%;
-    color: #bb1119;
-    margin-bottom: 12px;
-    display: inline-block;
-    background: #f0f8ff;
-    z-index: 2;
-    margin-top: 12px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 130%;
+  color: #bb1119;
+  margin-bottom: 12px;
+  display: inline-block;
+  background: #f0f8ff;
+  z-index: 2;
+  margin-top: 12px;
 }
 
 
 #tintuc1 ul.dienbien li.ct h2 p.kc2{
-	width: 233px;
+	width: 146px;
 	border-bottom: 1px solid #e5e5e5;
 }
 
@@ -345,7 +378,7 @@ body{
 }
 
 #tintuc1 ul.dienbien li.ct p.title1{
-	padding-top: 3px;
+		padding-top: 3px;
     font-family: sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -379,404 +412,212 @@ body{
 }
 
 #tintuc1 ul.dienbien li.xt a.see-more{
-	text-align: center;
 	margin-top: 18px;
-	color: #333CCC;
+	text-align: center;
+  color: #2e3192;
+  font-family: sans-serif;
+  display: block;
 }
 
-#tintuc6{
-	margin-left: 220px;
-	margin-top: 15px;
-	padding: 0px;
-	display: flex;
-	height: 565px;
+#tintuc1 ul.dienbien li.xt a.see-more:hover{
+	color: #993399;
+	transition: ease-in 0.10s;
+	-moz-transition: ease-in 0.10s;
+	-webkit-transition:  ease-in 0.10s;
+}
+
+#tintuc15{
+	margin-top: 10px;
 	width: 1080px;
-	border-bottom: 1px solid #2e3192;
+	height: 3150px;
+	margin-left: 220px;
+	display: flex;
 }
 
-#tintuc6-left{
-	width: 538px;
-	height: 550px;
-	border-right: 1px solid #ccc;
+#tintuc15-left{
+	width: 759px;
+	height: 3075px;
 }
 
-#tintuc6-right{
-	width: 538px;
-	height: 550px;
+#tintuc15-right{
+	width: 320px;
+	height: 3075px;
 }
 
-#tintuc6 ul{
+#tintuc15-left ul.tintuc15-left1{
+	width: 758px;
+	height: 205px;
+	border-bottom: 1px solid #e5e5e5;
 }
 
-#tintuc6 ul.categories{
-	height: 25px;
-	border-left: 4px solid blue;
+#tintuc15-left ul.tintuc15-left2{
+	width: 758px;
+	height: 205px;
 }
 
-#tintuc6 ul.tintuc6-left1{
-	width: 520px;
-	height: 164px;
-	border-bottom: 1px solid #ccc;
-	margin-top: 15px;
+#tintuc15-right ul.hotline{
+	width: 319px;
+	height: 52px;
+	margin-bottom: 20px;
 }
 
-#tintuc6 ul.tintuc6-left2{
-	width: 520px;
-	height: 164px;
-	margin-top: 15px;
-}
-
-#tintuc6 ul.tintuc6-right1{
-	width: 520px;
-	height: 164px;
-	border-bottom: 1px solid #ccc;
-	margin-left: 14px;
-	margin-top: 15px;
-}
-
-#tintuc6 ul.tintuc6-right2{
-	width: 520px;
-	height: 164px;
-	margin-left: 14px;
-	margin-top: 15px;
-}
-
-#tintuc6 ul.categories h2.cm a{
-	display: block;
-	margin-top: -1px;
-	height: 25px;
-	border-left: 3px solid red;
-	text-decoration: none;
-	font-size: 22px;
-    line-height: 130%;
-    color: #2e3192;
-    font-weight: 700;
-    font-family: sans-serif;
-    padding-left: 10px;
-    margin-left: -1px;
-}
-
-#tintuc6 ul li{
+#tintuc15-left ul li{
+	list-style: none;
 	float: left;
+	margin-top: 20px;
+}
+
+#tintuc15-left ul li.text{
+	width: 478px;
+	margin-left: 15px;
+	margin-top: 40px;
+}
+
+#tintuc15-right ul li{
 	list-style: none;
 }
 
-#tintuc6 ul li.img{
-	float: left;
-	height: 144px;
-
+#tintuc15-right ul.hotline li{
+	width: 300px;
+	height: 49px;
+	border: 1px solid #e5e5e5;
+	border-radius: 3px;
+	margin-left: 19px;
 }
 
-#tintuc6 ul li.text{
-	float: left;
-	width: 272px;
-	height: 144px;
-	margin-left: 14px;
+#phone-hospital{
+	width: 300px;
+	height: 408px;
+	border: 1px solid #e5e5e5;
+	border-radius: 3px;
+	margin-left: 19px;
 }
 
-#tintuc6 ul li.text a{
-	text-decoration: none;
+#phone-hospital ul{
+	width: 300px;
+}
+
+#phone-hospital ul.tile{
+	width: 300px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	background-color: #f0eff4;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+#phone-hospital ul.comment{
+	overflow: scroll;
+	height: 356px;
+}
+
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #AE0909;
+}
+
+#phone-hospital ul.comment li.nd{
+	width: 286px;
+	height: 52px;
+	border-bottom: 1px solid #e5e5e5;
+	margin-left: 6px;
+}
+
+#phone-hospital ul.comment li.nd1{
+	width: 286px;
+	height: 52px;
+	margin-left: 6px;
+}
+
+#phone-hospital ul.comment li.nd2{
+	width: 286px;
+	height: 73px;
+	border-bottom: 1px solid #e5e5e5;
+	margin-left: 6px;
+}
+
+#phone-hospital ul.comment li p{
+	margin-top: 15px;
+	float: left;
+	font-size: 14px;
+  line-height: 150%;
+  align-items: center;
+  color: #222;
+  font-family: sans-serif;
+}
+
+#phone-hospital ul.comment li p.name{
+	width: 170px;
+}
+
+#phone-hospital ul.comment li p.phone{
+	width: 110px;
+	margin-left: 3px;
+	text-indent: 15px;
+}
+
+#phone-hospital ul.comment li.nd p.phone{
+	width: 110px;
+	margin-left: 3px;
+	text-indent: 15px;
+}
+
+#phone-hospital ul.comment li.nd2 p.phone{
+	width: 110px;
+	margin-left: 3px;
+	text-indent: 15px;
+	margin-top: 25px;
+}
+
+#tintuc15-left ul li.text a{
 	font-weight: 500;
-    font-size: 20px;
-    line-height: 130%;
-    letter-spacing: .02em;
-    color: #333;
-    font-family: sans-serif;
-    margin-bottom: 10px;
-    display: block;
+	text-decoration: none;
+  font-size: 20px;
+  line-height: 130%;
+  letter-spacing: .02em;
+  color: #333;
+  font-family: sans-serif;
+  margin-bottom: 10px;
+  display: block;
 }
 
-#tintuc6 ul li.text a:hover{
+#tintuc15-left ul li.text a:hover{
 	color: #333399;
 	transition: ease-in 0.10s;
 	-moz-transition: ease-in 0.10s;
 	-webkit-transition:  ease-in 0.10s;
 }
 
-#tintuc6 ul li.text p{
+#tintuc15-left ul li.text p{
 	font-family: sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 140%;
-    color: #444;
-    display: block;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 140%;
+  color: #444;
 }
 
-#tintuc6-right ul.categories{
-	margin-left: 14px;
-	border-left: 4px solid blue;
-}
-
-#tintuc4{
-	height: 520px;
-	width: 1080px;
-	border-bottom: 1px solid #2e3192;
-	margin-left: 220px;
-	margin-top: 15px;
-	display: flex;
-}
-
-#tintuc4-left{
-	width: 559px;
-	height: 515px;
-}
-
-#tintuc4-right{
-	width: 520px;
-	height: 515px;
-}
-
-#tintuc4 ul{
-}
-
-#tintuc4 ul.categories{
-	height: 25px;
-	border-left: 4px solid blue;
-}
-
-#tintuc4-left ul.tintuc4-left1{
-	width: 555px;
-	height: 470px;
-	margin-top: 15px;
-	list-style: none;
-}
-
-#tintuc4-right ul.tintuc4-right1{
-	width: 517px;
-	height: 133px;
-	border-bottom: 1px solid #ccc;
-	margin-top: 39px;
-	list-style: none;
-}
-
-#tintuc4-right ul.tintuc4-right2{
-	width: 517px;
-	height: 133px;
-	border-bottom: 1px solid #ccc;
-	margin-top: 20px;
-	list-style: none;
-}
-
-#tintuc4-right ul.tintuc4-right3{
-	width: 517px;
-	height: 133px;
-	margin-top: 20px;
-	list-style: none;
-}
-
-#tintuc4-right ul.tintuc4-right1 li{
-	float: left;
-}
-
-#tintuc4-right ul.tintuc4-right2 li{
-	float: left;
-}
-
-#tintuc4-right ul.tintuc4-right3 li{
-	float: left;
-}
-
-#tintuc4-left ul.tintuc4-left1 li.text{
-	width: 520px;
-	height: 135px;
-}
-
-#tintuc4-left ul.categories h2.cm a{
-	display: block;
-	margin-top: -1px;
-	height: 25px;
-	border-left: 3px solid red;
-	text-decoration: none;
-	font-size: 22px;
-    line-height: 130%;
-    color: #2e3192;
-    font-weight: 700;
-    font-family: sans-serif;
-    padding-left: 10px;
-    margin-left: -1px;
-}
-
-#tintuc4-left ul.tintuc4-left1 li.text a{
-	display: block;
-	text-decoration: none;
-    font-weight: 500;
-    font-size: 22px;
-    line-height: 130%;
-    letter-spacing: .02em;
-    color: #333;
-    font-family: sans-serif;
-    margin-bottom: 12px;
-    margin-top: 5px;
-}
-
-#tintuc4-left ul.tintuc4-left1 li.text a:hover{
-	color: #333399;
-	transition: ease-in 0.10s;
-	-moz-transition: ease-in 0.10s;
-	-webkit-transition:  ease-in 0.10s;
-}
-
-#tintuc4-left ul.tintuc4-left1 li.text p{
-	font-family: sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 140%;
-    color: #444;
-}
-
-#tintuc4-right ul.tintuc4-right1 li.img{
-	float: left;
-}
-
-#tintuc4-right ul.tintuc4-right1 li.text{
-	float: left;
-	width: 325px;
-	margin-left: 10px;
-}
-
-#tintuc4-right ul.tintuc4-right1 li.text a{
-	display: block;
-	text-decoration: none;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 160%;
-    letter-spacing: .02em;
-    color: #333;
-    font-family: sans-serif;
-}
-
-#tintuc4-right ul.tintuc4-right1 li.text a:hover{
-	color: #333399;
-	transition: ease-in 0.10s;
-	-moz-transition: ease-in 0.10s;
-	-webkit-transition:  ease-in 0.10s;
-}
-
-#tintuc4-right ul.tintuc4-right2 li.img{
-	float: left;
-}
-
-#tintuc4-right ul.tintuc4-right2 li.text{
-	float: left;
-	width: 325px;
-	margin-left: 10px;
-}
-
-#tintuc4-right ul.tintuc4-right2 li.text a{
-	display: block;
-	text-decoration: none;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 160%;
-    letter-spacing: .02em;
-    color: #333;
-    font-family: sans-serif;
-}
-
-#tintuc4-right ul.tintuc4-right2 li.text a:hover{
-	color: #333399;
-	transition: ease-in 0.10s;
-	-moz-transition: ease-in 0.10s;
-	-webkit-transition:  ease-in 0.10s;
-}
-
-#tintuc4-right ul.tintuc4-right3 li.img{
-	float: left;
-}
-
-#tintuc4-right ul.tintuc4-right3 li.text{
-	float: left;
-	width: 325px;
-	margin-left: 10px;
-}
-
-#tintuc4-right ul.tintuc4-right3 li.text a{
-	display: block;
-	text-decoration: none;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 160%;
-    letter-spacing: .02em;
-    color: #333;
-    font-family: sans-serif;
-}
-
-#tintuc4-right ul.tintuc4-right3 li.text a:hover{
-	color: #333399;
-	transition: ease-in 0.10s;
-	-moz-transition: ease-in 0.10s;
-	-webkit-transition:  ease-in 0.10s;
-}
-
-#tintuc8{
-	width: 1080px;
-	height: 640px;
-	border-bottom: 1px solid #2e3192;
-	margin-left: 220px;
-	margin-top: 15px;
-}
-
-#tintuc8 ul.categories{
-	height: 25px;
-	border-left: 4px solid blue;
-	margin-bottom: 15px;
-}
-
-#tintuc8 ul.categories h2.cm a{
-	display: block;
-	margin-top: -1px;
-	height: 25px;
-	border-left: 3px solid red;
-	text-decoration: none;
-	font-size: 22px;
-    line-height: 130%;
-    color: #2e3192;
-    font-weight: 700;
-    font-family: sans-serif;
-    padding-left: 10px;
-    margin-left: -1px;
-}
-
-#tintuc8 ul.tintuc8-1{
-	width: 1079px;
-	height: 300px;
-	list-style: none;
-}
-
-#tintuc8 ul.tintuc8-1 li{
-	float: left;
-}
-
-#tintuc8 ul.tintuc8-1 li.tintuc8-1-1{
-	width: 250px;
-	height: 300px;
-}
-
-#tintuc8 ul.tintuc8-1 li.tintuc8-1-2{
-	width: 250px;
-	height: 300px;
-	margin-left: 26px;
-}
-
-#tintuc8 ul.tintuc8-1 li a{
-	display: block;
-	text-decoration: none;
-	width: 250px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 160%;
-    letter-spacing: .02em;
-    color: #333;
-    font-family: sans-serif;
-}
-
-#tintuc8 ul.tintuc8-1 li a:hover{
-	color: #333399;
-	transition: ease-in 0.10s;
-	-moz-transition: ease-in 0.10s;
-	-webkit-transition:  ease-in 0.10s;
+#phone-hospital ul.tile li.td p{
+	font-weight: 600;
+  font-size: 15px;
+  color: #333;
+  font-family: sans-serif;
 }
 
 #lienket{
