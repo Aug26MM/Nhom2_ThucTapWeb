@@ -5685,19 +5685,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Admin\\.nuget\\packages\\": {}
+    "C:\\Users\\quang\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Nhom2ThuctapWep\\Nhom2_ThucTapWeb\\DeTaiCovid\\DeTaiCovid\\DeTaiCovid.csproj",
+      "projectUniqueName": "D:\\Code\\CodeImpostor\\Test\\Nhom2_ThucTapWeb\\DeTaiCovid\\DeTaiCovid\\DeTaiCovid.csproj",
       "projectName": "DeTaiCovid",
-      "projectPath": "E:\\Nhom2ThuctapWep\\Nhom2_ThucTapWeb\\DeTaiCovid\\DeTaiCovid\\DeTaiCovid.csproj",
-      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "E:\\Nhom2ThuctapWep\\Nhom2_ThucTapWeb\\DeTaiCovid\\DeTaiCovid\\obj\\",
+      "projectPath": "D:\\Code\\CodeImpostor\\Test\\Nhom2_ThucTapWeb\\DeTaiCovid\\DeTaiCovid\\DeTaiCovid.csproj",
+      "packagesPath": "C:\\Users\\quang\\.nuget\\packages\\",
+      "outputPath": "D:\\Code\\CodeImpostor\\Test\\Nhom2_ThucTapWeb\\DeTaiCovid\\DeTaiCovid\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\quang\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5770,7 +5770,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
       }
     }
   }

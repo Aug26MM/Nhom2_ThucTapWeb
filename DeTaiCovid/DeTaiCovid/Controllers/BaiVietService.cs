@@ -16,11 +16,16 @@ namespace DeTaiCovid.Controllers
             return dbContext.BaiViets.ToList();
         }
 
+        public BaiViet LayBaiVietTheoId(int baiVietId)
+        {
+            return dbContext.BaiViets.SingleOrDefault(x => x.BaiVietId == baiVietId);
+        }
+
         public List<BaiViet> LayDSBaiVietTheoChuDe(int maChuDe)
         {
             return dbContext.BaiViets.Where(x => x.ChuDeid == maChuDe).ToList();
         }
-        
+
         public bool ThemBaiViet(BaiViet newBaiViet)
         {
 
@@ -36,14 +41,14 @@ namespace DeTaiCovid.Controllers
                 dbContext.SaveChanges();
                 return true;
             }
-           
+
 
 
         }
         public bool SuaBaiViet(BaiViet baiviet)
         {
             BaiViet currentBaiViet = dbContext.BaiViets.SingleOrDefault(x => x.BaiVietId == baiviet.BaiVietId);
-            ChuDe currentChuDe = dbContext.ChuDes.SingleOrDefault(x => x.ChuDeid == baiviet.BaiVietId);
+            ChuDe currentChuDe = dbContext.ChuDes.SingleOrDefault(x => x.ChuDeid == baiviet.ChuDeid);
             if (currentBaiViet == null || currentChuDe == null)
             {
                 return false;
@@ -61,11 +66,11 @@ namespace DeTaiCovid.Controllers
             }
 
         }
-        public bool XoaBaiViet(BaiViet hocsinh)
+        public bool XoaBaiViet(int baiVietId)
         {
 
-            BaiViet CurrentBaiViet = dbContext.BaiViets.SingleOrDefault(x => x.BaiVietId == hocsinh.BaiVietId);
-            ChuDe currentChuDe = dbContext.ChuDes.SingleOrDefault(x => x.ChuDeid == hocsinh.ChuDeid);
+            BaiViet CurrentBaiViet = dbContext.BaiViets.SingleOrDefault(x => x.BaiVietId == baiVietId);
+            ChuDe currentChuDe = dbContext.ChuDes.SingleOrDefault(x => x.ChuDeid == CurrentBaiViet.ChuDeid);
             if (CurrentBaiViet == null)
             {
                 return false;

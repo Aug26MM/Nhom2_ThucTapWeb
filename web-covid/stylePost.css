@@ -17,14 +17,13 @@ font-family: 'Roboto', sans-serif; */
     margin: 0 auto;
 }
 
-main{
+main {
     max-width: 1503px;
     width: 100%;
     margin: 0 auto;
 }
 
-header{
-
+header {
 }
 
 .header__top {
@@ -63,24 +62,24 @@ header{
     padding-top: 70px;
 }
 
-#tile{
+#tile {
     width: 1500px;
     height: 40px;
     margin-top: 20px;
 }
 
-#tile h3{
+#tile h3 {
     height: 30px;
     margin-bottom: 20px;
-    float:left;
+    float: left;
 }
 
-#tile h3.button{
+#tile h3.button {
     margin-left: 1170px;
     margin-top: -1px;
 }
 
-#tile h3.button button{
+#tile h3.button button {
     height: 30px;
     cursor: pointer;
     width: 100px;
@@ -88,34 +87,33 @@ header{
     border-radius: 5px;
 }
 
-#tile h3.button button:hover{
-    background-color: #FFCCCC;
-    transition: ease-in 0.20s;
-    -moz-transition: ease-in 0.20s;
-    -webkit-transition:  ease-in 0.20s;
-    border: 1px solid #CCCCFF;
+#tile h3.button button:hover {
+    background-color: #ffcccc;
+    transition: ease-in 0.2s;
+    -moz-transition: ease-in 0.2s;
+    -webkit-transition: ease-in 0.2s;
+    border: 1px solid #ccccff;
 }
 
-#tile h3.button button p{
+#tile h3.button button p {
     float: left;
 }
 
-#tile h3.button a button.post p.img img{
+#tile h3.button button.post p.img img {
     margin-top: 1px;
     margin-left: 5px;
 }
 
-#tile h3.button a button.post p.name-button{
+#tile h3.button button.post p.name-button {
     margin-top: 3px;
     font-family: "Merriweather", serif;
-
 }
 
-#tile h3 a.tile__page{
+#tile h3 a.tile__page {
     margin-top: 2px;
 }
 
-#tile h3 a{
+#tile h3 a {
     display: block;
     text-decoration: none;
     align-items: center;
@@ -124,24 +122,24 @@ header{
     font-weight: 600;
     font-size: 24px;
     line-height: 130%;
-    letter-spacing: .02em;
+    letter-spacing: 0.02em;
     text-transform: uppercase;
     color: #2e3192;
     float: left;
 }
 
-#input{
+#input {
     border: 2px dashed #b1154a;
     width: 1500px;
     height: 480px;
     margin-top: 10px;
 }
 
-#input p{
+#input p {
     float: left;
 }
 
-#tile-port{
+#tile-port {
     margin-top: 20px;
     margin-left: 10px;
     border-bottom: 1px solid #111;
@@ -150,12 +148,12 @@ header{
     max-width: 1470px;
     margin-bottom: 5px;
 }
-    
-#tile-port p.img{
+
+#tile-port p.img {
     margin-top: 1px;
 }
 
-#tile-port p.text{
+#tile-port p.text {
     display: block;
     align-items: center;
     font-family: "Merriweather", serif;
@@ -163,18 +161,18 @@ header{
     font-weight: 600;
     font-size: 16px;
     line-height: 130%;
-    letter-spacing: .02em;
+    letter-spacing: 0.02em;
     color: #330066;
 }
 
-#tile-port input{
+#tile-port input {
     margin-top: 2px;
     height: 30px;
     width: 1471px;
     border: none;
 }
 
-#description{
+#description {
     margin-top: 20px;
     margin-left: 10px;
     width: 1470px;
@@ -183,12 +181,12 @@ header{
     margin-bottom: 5px;
     border-bottom: 1px solid #111;
 }
-    
-#description p.img{
+
+#description p.img {
     margin-top: 1px;
 }
 
-#description p.text{
+#description p.text {
     display: block;
     align-items: center;
     font-family: "Merriweather", serif;
@@ -196,18 +194,18 @@ header{
     font-weight: 600;
     font-size: 16px;
     line-height: 130%;
-    letter-spacing: .02em;
+    letter-spacing: 0.02em;
     color: #330066;
 }
 
-#description input{
+#description input {
     margin-top: 2px;
     height: 30px;
     width: 1471px;
     border: none;
 }
 
-#img{
+#img {
     margin-top: 20px;
     margin-left: 10px;
     width: 1470px;
@@ -216,12 +214,12 @@ header{
     margin-bottom: 5px;
     border-bottom: 1px solid #111;
 }
-    
-#img p.img{
+
+#img p.img {
     margin-top: 1px;
 }
 
-#img p.text{
+#img p.text {
     display: block;
     align-items: center;
     font-family: "Merriweather", serif;
@@ -229,11 +227,11 @@ header{
     font-weight: 600;
     font-size: 16px;
     line-height: 130%;
-    letter-spacing: .02em;
+    letter-spacing: 0.02em;
     color: #330066;
 }
 
-#img input{
+#img input {
     margin-top: 25px;
     margin-left: -100px;
     height: 30px;
@@ -241,7 +239,7 @@ header{
     border: none;
 }
 
-#theme{
+#theme {
     margin-top: 20px;
     margin-left: 10px;
     width: 1470px;
@@ -250,12 +248,12 @@ header{
     margin-bottom: 5px;
     border-bottom: 1px solid #111;
 }
-    
-#theme p.img{
+
+#theme p.img {
     margin-top: 1px;
 }
 
-#theme p.text{
+#theme p.text {
     display: block;
     align-items: center;
     font-family: "Merriweather", serif;
@@ -263,18 +261,18 @@ header{
     font-weight: 600;
     font-size: 16px;
     line-height: 130%;
-    letter-spacing: .02em;
+    letter-spacing: 0.02em;
     color: #330066;
 }
 
-#theme input{
+#theme input {
     margin-top: 2px;
     height: 30px;
     width: 1471px;
     border: none;
 }
 
-#content{
+#content {
     margin-top: 20px;
     margin-left: 10px;
     width: 1470px;
@@ -282,12 +280,12 @@ header{
     max-width: 1470px;
     margin-bottom: 5px;
 }
-    
-#content p.img{
+
+#content p.img {
     margin-top: 1px;
 }
 
-#content p.text{
+#content p.text {
     display: block;
     align-items: center;
     font-family: "Merriweather", serif;
@@ -295,54 +293,54 @@ header{
     font-weight: 600;
     font-size: 16px;
     line-height: 130%;
-    letter-spacing: .02em;
+    letter-spacing: 0.02em;
     color: #330066;
 }
 
- #content textarea{
+#content textarea {
     margin-top: 10px;
     resize: none;
     width: 1470px;
-} 
-footer{
+}
+footer {
     margin-top: 150px;
     height: 131px;
-    background-color: #2E3192;
+    background-color: #2e3192;
 }
 
-.footer__mid{
+.footer__mid {
     height: 130px;
 }
 
-.footer__mid ul{
+.footer__mid ul {
     height: 125px;
     float: left;
 }
 
-.footer__mid ul li{
+.footer__mid ul li {
     list-style: none;
 }
-.footer__mid ul.logo{
+.footer__mid ul.logo {
     width: 125px;
 }
 
-.footer__mid ul.information{
+.footer__mid ul.information {
     width: 830px;
 }
 
-.footer__mid ul.co-op{
+.footer__mid ul.co-op {
     width: 110px;
 }
 
-.footer__mid ul.logo li span.logo a{
+.footer__mid ul.logo li span.logo a {
     display: block;
 }
 
-.footer__mid ul.logo li span.logo a img{
+.footer__mid ul.logo li span.logo a img {
     margin-top: -32px;
 }
 
-.footer__mid ul.information li p.information1{
+.footer__mid ul.information li p.information1 {
     font-family: "Merriweather", serif;
     font-style: normal;
     font-weight: normal;
@@ -354,7 +352,7 @@ footer{
     margin-left: 10px;
 }
 
-.footer__mid ul.information li p.information2{
+.footer__mid ul.information li p.information2 {
     font-family: "Merriweather", serif;
     font-style: normal;
     font-weight: normal;
@@ -365,7 +363,7 @@ footer{
     margin-left: 10px;
 }
 
-.footer__mid ul.co-op li{
+.footer__mid ul.co-op li {
     margin-left: 7px;
     margin-top: 20px;
 }

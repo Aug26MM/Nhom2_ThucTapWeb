@@ -47,6 +47,22 @@ namespace DeTaiCovid.API
             }
         }
 
+        [HttpGet]
+        [Route("layTheoBaiVietId")]
+        public IActionResult LayDSBaiVietTheoBaiVietId(int baiVietId)
+        {
+            var baiViet = BaiVietService.LayBaiVietTheoId(baiVietId);
+            if (baiViet != null)
+            {
+                return Ok(baiViet);
+            }
+            else
+            {
+                //bắt mã lỗi
+                return BadRequest("Không tìm thấy bài viết tương ứng!");
+            }
+        }
+
         [HttpPost]
         public IActionResult ThemBaiViet(BaiViet newBaiViet)
         {
@@ -76,16 +92,16 @@ namespace DeTaiCovid.API
             }
         }
         [HttpDelete]
-        public IActionResult XoaBaiViet(BaiViet baiViet)
+        public IActionResult XoaBaiViet(int baiVietId)
         {
-            bool check = BaiVietService.XoaBaiViet(baiViet);
+            bool check = BaiVietService.XoaBaiViet(baiVietId);
             if (check == true)
             {
-                return Ok($"xóa bài viêt {baiViet.BaiVietId}  thành công");
+                return Ok($"xóa bài viêt {baiVietId}  thành công");
             }
             else
             {
-                return BadRequest($"xóa bài viết  {baiViet.BaiVietId}  Thất bại");
+                return BadRequest($"xóa bài viết  {baiVietId}  Thất bại");
 
             }
         }

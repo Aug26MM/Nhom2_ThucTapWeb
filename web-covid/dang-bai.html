@@ -18,7 +18,7 @@
 <body>
     <header>
         <div class="header__top">
-            </div>
+        </div>
         </div>
         <div class="header__middle">
             <div class="header__middle__container">
@@ -37,41 +37,47 @@
                 <a class="tile__page" href="">TRANG ĐĂNG BÀI</a>
             </h3>
             <h3 class="button">
-                <a href="">
-                    <button class="post">
-                        <p class="img"><img src="./images/port.png"></p>
-                        <p class="name-button">ĐĂNG BÀI</p>
-                    </button>
-                </a>
+                <button type="button" class="post" onclick="DangBai()">
+                    <p class="img"><img src="./images/port.png"></p>
+                    <p class="name-button">ĐĂNG BÀI</p>
+                </button>
             </h3>
         </div>
         <div id="input">
             <div id="tile-port">
                 <p class="img"><img src="./images/title.png"></p>
                 <p class="text">Tiêu đề:</p>
-                <input type="text" placeholder="Mời nhập tiêu đề">
+                <input type="text" placeholder="Mời nhập tiêu đề" name="" id="tieuDe">
             </div>
             <div id="description">
                 <p class="img"><img src="./images/description.png"></p>
                 <p class="text">Mô tả:</p>
-                <input type="text" placeholder="Mời nhập mô tả">
+                <input type="text" placeholder="Mời nhập mô tả" name="" id="moTa">
             </div>
             <div id="img">
                 <p class="img"><img src="./images/image.png"></p>
                 <p class="text">Hình ảnh:</p>
-                <input type="file" placeholder="Mời chọn hình ảnh">
+                <input type="file" placeholder="Mời chọn hình ảnh" id="hinhAnh">
             </div>
             <div id="theme">
                 <p class="img"><img src="./images/theme.png"></p>
                 <p class="text">Chủ đề:</p>
-                <input type="text" placeholder="Mời nhập chủ đề">
+                <input type="number" placeholder="Mời nhập mã chủ đề" name="" id="chuDeId">
             </div>
             <div id="content">
                 <p class="img"><img src="./images/content.png"></p>
                 <p class="text">Nội dung:</p>
-                <textarea id="w3review" name="w3review" rows="6" cols="200" placeholder="Mời nhập nội dung">
+                <textarea rows="6" cols="200" placeholder="Mời nhập nội dung" name="" id="noiDung">
                 </textarea>
             </div>
+            <h3 class="button">
+                <a href="./quan-ly-bai-viet.html">
+                    <button type="button" class="post">
+                        <p class="img"><img src="./images/port.png"></p>
+                        <p class="name-button">Quay lại</p>
+                    </button>
+                </a>
+            </h3>
         </div>
     </main>
     <footer>
@@ -105,6 +111,8 @@
         </div>
     </footer>
 
+    <script src="./dang-bai.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </body>
 
 </html>

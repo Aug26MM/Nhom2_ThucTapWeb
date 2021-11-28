@@ -11,7 +11,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./styleManage.css">
+    <link rel="stylesheet" href="./stylePost.css">
     <title>BẢN TIN COVID-19</title>
 </head>
 
@@ -34,42 +34,50 @@
     <main>
         <div id="tile">
             <h3 class="tile__page">
-                <a class="tile__page" href="">TRANG QUẢN LÝ BÀI VIẾT</a>
+                <a class="tile__page" href="">SỬA BÀI VIẾT</a>
             </h3>
             <h3 class="button">
-                <a href="dang-bai.html"><button id="post"><span></span>THÊM BÀI</button></a>
+                <button type="button" class="post" onclick="onUpdate()">
+                    <p class="img"><img src="./images/port.png"></p>
+                    <p class="name-button">CẬP NHẬT</p>
+                </button>
             </h3>
         </div>
-        <div>
-            <div id="table">
-                <table border="1" cellspacing="0" cellpadding="0" id="dataTable">
-                    <!-- <tr class="title">
-                        <td>Mã bài viết</td>
-                        <td>Tiêu đề</td>
-                        <td>Mô tả</td>
-                        <td>Nội dung</td>
-                        <td>Hình ảnh</td>
-                        <td>Ngày tạo</td>
-                        <td>Mã chủ đề</td>
-                        <td>Action</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>
-                           <div class="button">
-                                <button>Sửa</button>
-                                <button>Xóa</button>
-                           </div>
-                        </td>
-                    </tr> -->
-                </table>
+        <div id="input">
+            <div id="tile-port">
+                <p class="img"><img src="./images/title.png"></p>
+                <p class="text">Tiêu đề:</p>
+                <input type="text" placeholder="Mời nhập tiêu đề" name="" id="tieuDe">
             </div>
+            <div id="description">
+                <p class="img"><img src="./images/description.png"></p>
+                <p class="text">Mô tả:</p>
+                <input type="text" placeholder="Mời nhập mô tả" name="" id="moTa">
+            </div>
+            <div id="img">
+                <p class="img"><img src="./images/image.png"></p>
+                <p class="text">Hình ảnh:</p>
+                <input type="file" placeholder="Mời chọn hình ảnh" id="hinhAnh">
+            </div>
+            <div id="theme">
+                <p class="img"><img src="./images/theme.png"></p>
+                <p class="text">Chủ đề:</p>
+                <input type="number" placeholder="Mời nhập mã chủ đề" name="" id="chuDeId">
+            </div>
+            <div id="content">
+                <p class="img"><img src="./images/content.png"></p>
+                <p class="text">Nội dung:</p>
+                <textarea rows="6" cols="200" placeholder="Mời nhập nội dung" name="" id="noiDung">
+                </textarea>
+            </div>
+            <h3 class="button">
+                <a href="./quan-ly-bai-viet.html">
+                    <button type="button" class="post">
+                        <p class="img"><img src="./images/port.png"></p>
+                        <p class="name-button">Quay lại</p>
+                    </button>
+                </a>
+            </h3>
         </div>
     </main>
     <footer>
@@ -103,7 +111,7 @@
         </div>
     </footer>
 
-    <script src="./quan-ly-bai-viet.js"></script>
+    <script src="./sua-bai-viet.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </body>
 
