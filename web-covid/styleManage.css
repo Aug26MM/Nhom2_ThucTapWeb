@@ -8,12 +8,17 @@
 font-family: 'Merriweather', serif;
 font-family: 'Roboto', sans-serif; */
 
-main,
 .header__top,
 .header__middle__container,
 .footer__mid,
 .header__bottom ul {
     max-width: 1083px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+main{
+    max-width: 1503px;
     width: 100%;
     margin: 0 auto;
 }
@@ -59,7 +64,7 @@ header{
 }
 
 #tile{
-    width: 1080px;
+    width: 1500px;
     height: 40px;
     margin-top: 20px;
 }
@@ -71,7 +76,7 @@ header{
 }
 
 #tile h3.button{
-    margin-left: 640px;
+    margin-left: 1060px;
     margin-top: -1px;
 }
 
@@ -79,10 +84,37 @@ header{
     height: 30px;
     cursor: pointer;
     width: 100px;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
 }
+
+#tile h3.button button:hover{
+    background-color: #FFCCCC;
+    transition: ease-in 0.20s;
+    -moz-transition: ease-in 0.20s;
+    -webkit-transition:  ease-in 0.20s;
+    border: 1px solid #CCCCFF;
+}
+
+#tile h3.button button p{
+    float: left;
+}
+
+#tile h3.button a button.post p.img img{
+    margin-top: 1px;
+    margin-left: 5px;
+}
+
+#tile h3.button a button.post p.name-button{
+    margin-top: 3px;
+    font-family: "Merriweather", serif;
+
+}
+
 #tile h3 a.tile__page{
-    margin-top: 6px;
+    margin-top: 2px;
 }
+
 #tile h3 a{
     display: block;
     text-decoration: none;
@@ -98,6 +130,29 @@ header{
     float: left;
 }
 
+#table table{
+    width: 100%;
+    border: 1px solid black; 
+    text-align: center;  
+    color: #2e3192;  
+}
+
+#table .button{
+    display: flex;
+    justify-content: space-around;
+}
+.button button {
+    width: 70px;
+    height: 35px;
+    margin: 5px;
+    color: #2e3192;
+}
+#table .title{
+    font-family: "Merriweather", serif;
+
+    font-weight: bold;
+    
+}
 footer{
     margin-top: 300px;
     height: 131px;

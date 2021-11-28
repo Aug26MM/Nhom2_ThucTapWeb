@@ -8,12 +8,17 @@
 font-family: 'Merriweather', serif;
 font-family: 'Roboto', sans-serif; */
 
-main,
 .header__top,
 .header__middle__container,
 .footer__mid,
 .header__bottom ul {
     max-width: 1083px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+main{
+    max-width: 1503px;
     width: 100%;
     margin: 0 auto;
 }
@@ -59,7 +64,7 @@ header{
 }
 
 #tile{
-    width: 1080px;
+    width: 1500px;
     height: 40px;
     margin-top: 20px;
 }
@@ -71,7 +76,7 @@ header{
 }
 
 #tile h3.button{
-    margin-left: 750px;
+    margin-left: 1170px;
     margin-top: -1px;
 }
 
@@ -79,10 +84,37 @@ header{
     height: 30px;
     cursor: pointer;
     width: 100px;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
 }
+
+#tile h3.button button:hover{
+    background-color: #FFCCCC;
+    transition: ease-in 0.20s;
+    -moz-transition: ease-in 0.20s;
+    -webkit-transition:  ease-in 0.20s;
+    border: 1px solid #CCCCFF;
+}
+
+#tile h3.button button p{
+    float: left;
+}
+
+#tile h3.button a button.post p.img img{
+    margin-top: 1px;
+    margin-left: 5px;
+}
+
+#tile h3.button a button.post p.name-button{
+    margin-top: 3px;
+    font-family: "Merriweather", serif;
+
+}
+
 #tile h3 a.tile__page{
-    margin-top: 6px;
+    margin-top: 2px;
 }
+
 #tile h3 a{
     display: block;
     text-decoration: none;
@@ -98,8 +130,182 @@ header{
     float: left;
 }
 
+#input{
+    border: 2px dashed #b1154a;
+    width: 1500px;
+    height: 480px;
+    margin-top: 10px;
+}
+
+#input p{
+    float: left;
+}
+
+#tile-port{
+    margin-top: 20px;
+    margin-left: 10px;
+    border-bottom: 1px solid #111;
+    width: 1470px;
+    height: 56px;
+    max-width: 1470px;
+    margin-bottom: 5px;
+}
+    
+#tile-port p.img{
+    margin-top: 1px;
+}
+
+#tile-port p.text{
+    display: block;
+    align-items: center;
+    font-family: "Merriweather", serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: .02em;
+    color: #330066;
+}
+
+#tile-port input{
+    margin-top: 2px;
+    height: 30px;
+    width: 1471px;
+    border: none;
+}
+
+#description{
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 1470px;
+    height: 56px;
+    max-width: 1470px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #111;
+}
+    
+#description p.img{
+    margin-top: 1px;
+}
+
+#description p.text{
+    display: block;
+    align-items: center;
+    font-family: "Merriweather", serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: .02em;
+    color: #330066;
+}
+
+#description input{
+    margin-top: 2px;
+    height: 30px;
+    width: 1471px;
+    border: none;
+}
+
+#img{
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 1470px;
+    height: 56px;
+    max-width: 1470px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #111;
+}
+    
+#img p.img{
+    margin-top: 1px;
+}
+
+#img p.text{
+    display: block;
+    align-items: center;
+    font-family: "Merriweather", serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: .02em;
+    color: #330066;
+}
+
+#img input{
+    margin-top: 25px;
+    margin-left: -100px;
+    height: 30px;
+    width: 200px;
+    border: none;
+}
+
+#theme{
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 1470px;
+    height: 56px;
+    max-width: 1470px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #111;
+}
+    
+#theme p.img{
+    margin-top: 1px;
+}
+
+#theme p.text{
+    display: block;
+    align-items: center;
+    font-family: "Merriweather", serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: .02em;
+    color: #330066;
+}
+
+#theme input{
+    margin-top: 2px;
+    height: 30px;
+    width: 1471px;
+    border: none;
+}
+
+#content{
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 1470px;
+    height: 200px;
+    max-width: 1470px;
+    margin-bottom: 5px;
+}
+    
+#content p.img{
+    margin-top: 1px;
+}
+
+#content p.text{
+    display: block;
+    align-items: center;
+    font-family: "Merriweather", serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: .02em;
+    color: #330066;
+}
+
+ #content textarea{
+    margin-top: 10px;
+    resize: none;
+    width: 1470px;
+} 
 footer{
-    margin-top: 300px;
+    margin-top: 150px;
     height: 131px;
     background-color: #2E3192;
 }
