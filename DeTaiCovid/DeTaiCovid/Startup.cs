@@ -32,7 +32,7 @@ namespace DeTaiCovid
 
             services.AddCors(x => x.AddPolicy("corsGlobalPolicy", builder =>
             {
-                builder.WithOrigins("http://localhost:8888")
+                builder.WithOrigins("http://127.0.0.1:5500")
                 .AllowAnyHeader()
                 .AllowAnyMethod()
                 .AllowCredentials();

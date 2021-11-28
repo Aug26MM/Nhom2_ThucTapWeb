@@ -9,26 +9,31 @@ namespace DeTaiCovid.Controllers
 {
     public class BaiVietService
     {
-        private TinTucCovidContext DbContext = new TinTucCovidContext();
+        private TinTucCovidContext dbContext = new TinTucCovidContext();
 
         public List<BaiViet> LayDSBaiViet()
         {
-            return DbContext.BaiViets.ToList();
+            return dbContext.BaiViets.ToList();
+        }
+
+        public List<BaiViet> LayDSBaiVietTheoChuDe(int maChuDe)
+        {
+            return dbContext.BaiViets.Where(x => x.ChuDeid == maChuDe).ToList();
         }
         
         public bool ThemBaiViet(BaiViet newBaiViet)
         {
 
-            ChuDe currentChuDe = DbContext.ChuDes.SingleOrDefault(x => x.ChuDeid == newBaiViet.ChuDeid);
+            ChuDe currentChuDe = dbContext.ChuDes.SingleOrDefault(x => x.ChuDeid == newBaiViet.ChuDeid);
             if (currentChuDe == null)
             {
                 return false;
             }
             else
             {
-                DbContext.BaiViets.Add(newBaiViet);
+                dbContext.BaiViets.Add(newBaiViet);
                 CapNhapSoLuong(currentChuDe);
-                DbContext.SaveChanges();
+                dbContext.SaveChanges();
                 return true;
             }
            
@@ -37,8 +42,8 @@ namespace DeTaiCovid.Controllers
         }
         public bool SuaBaiViet(BaiViet baiviet)
         {
-            BaiViet currentBaiViet = DbContext.BaiViets.SingleOrDefault(x => x.BaiVietId == baiviet.BaiVietId);
-            ChuDe currentChuDe = DbContext.ChuDes.SingleOrDefault(x => x.ChuDeid == baiviet.BaiVietId);
+            BaiViet currentBaiViet = dbContext.BaiViets.SingleOrDefault(x => x.BaiVietId == baiviet.BaiVietId);
+            ChuDe currentChuDe = dbContext.ChuDes.SingleOrDefault(x => x.ChuDeid == baiviet.BaiVietId);
             if (currentBaiViet == null || currentChuDe == null)
             {
                 return false;
@@ -50,8 +55,8 @@ namespace DeTaiCovid.Controllers
                 currentBaiViet.NoiDung = baiviet.NoiDung;
                 currentBaiViet.Anh = baiviet.Anh;
                 currentBaiViet.NgayTao = baiviet.NgayTao;
-                DbContext.BaiViets.Update(currentBaiViet);
-                DbContext.SaveChanges();
+                dbContext.BaiViets.Update(currentBaiViet);
+                dbContext.SaveChanges();
                 return true;
             }
 
@@ -59,16 +64,16 @@ namespace DeTaiCovid.Controllers
         public bool XoaBaiViet(BaiViet hocsinh)
         {
 
-            BaiViet CurrentBaiViet = DbContext.BaiViets.SingleOrDefault(x => x.BaiVietId == hocsinh.BaiVietId);
-            ChuDe currentChuDe = DbContext.ChuDes.SingleOrDefault(x => x.ChuDeid == hocsinh.ChuDeid);
+            BaiViet CurrentBaiViet = dbContext.BaiViets.SingleOrDefault(x => x.BaiVietId == hocsinh.BaiVietId);
+            ChuDe currentChuDe = dbContext.ChuDes.SingleOrDefault(x => x.ChuDeid == hocsinh.ChuDeid);
             if (CurrentBaiViet == null)
             {
                 return false;
             }
             else
             {
-                DbContext.Remove(CurrentBaiViet);
-                DbContext.SaveChanges();
+                dbContext.Remove(CurrentBaiViet);
+                dbContext.SaveChanges();
                 CapNhapSoLuong(currentChuDe);
                 return true;
             }
@@ -76,7 +81,7 @@ namespace DeTaiCovid.Controllers
         }
         public void CapNhapSoLuong(ChuDe currentChuDe)
         {
-            List<BaiViet> lstChuDe = DbContext.BaiViets.ToList();
+            List<BaiViet> lstChuDe = dbContext.BaiViets.ToList();
             int dem = 0;
             for (int i = 0; i < lstChuDe.Count; i++)
             {
@@ -86,8 +91,8 @@ namespace DeTaiCovid.Controllers
                 }
             }
             currentChuDe.SoLuongBaiViet = dem;
-            DbContext.Update(currentChuDe);
-            DbContext.SaveChanges();
+            dbContext.Update(currentChuDe);
+            dbContext.SaveChanges();
         }
     }
 }

@@ -1,8 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\365\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\365\\.nuget\\packages"
+      "C:\\Users\\quang\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\quang\\.nuget\\packages"
     ]
   }
 }

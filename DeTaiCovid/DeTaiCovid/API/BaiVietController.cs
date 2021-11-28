@@ -29,6 +29,24 @@ namespace DeTaiCovid.API
                 return BadRequest("Danh Sách trống!");
             }
         }
+
+        [HttpGet]
+        [Route("layTheoChuDe")]
+        public IActionResult LayDSBaiVietTheoChuDe(int maChuDe)
+        {
+            var lstBaiViet = BaiVietService.LayDSBaiVietTheoChuDe(maChuDe);
+            if (lstBaiViet.Count > 0)
+            {
+
+                return Ok(lstBaiViet);
+            }
+            else
+            {
+                //bắt mã lỗi
+                return BadRequest("Danh Sách trống!");
+            }
+        }
+
         [HttpPost]
         public IActionResult ThemBaiViet(BaiViet newBaiViet)
         {
