@@ -309,3 +309,6 @@ D:\Code\CodeImpostor\Test\Nhom2_ThucTapWeb\DeTaiCovid\DeTaiCovid\obj\Debug\net5.
 D:\Code\CodeImpostor\Test\Nhom2_ThucTapWeb\DeTaiCovid\DeTaiCovid\obj\Debug\net5.0\ref\DeTaiCovid.dll
 D:\Code\CodeImpostor\Test\Nhom2_ThucTapWeb\DeTaiCovid\DeTaiCovid\obj\Debug\net5.0\DeTaiCovid.pdb
 D:\Code\CodeImpostor\Test\Nhom2_ThucTapWeb\DeTaiCovid\DeTaiCovid\obj\Debug\net5.0\DeTaiCovid.genruntimeconfig.cache
+E:\Nhom2ThuctapWep\Nhom2_ThucTapWeb\DeTaiCovid\DeTaiCovid\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
+E:\Nhom2ThuctapWep\Nhom2_ThucTapWeb\DeTaiCovid\DeTaiCovid\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+E:\Nhom2ThuctapWep\Nhom2_ThucTapWeb\DeTaiCovid\DeTaiCovid\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
