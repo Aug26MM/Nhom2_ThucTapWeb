@@ -1,3 +1,5 @@
+CKEDITOR.replace( 'noiDung' );
+
 window.onload = function (e) {
     var baiVietId = localStorage.getItem("baiVietId");
     axios.get("https://localhost:44372/api/baiViet/layTheoBaiVietId?baiVietId=" + baiVietId).then(res => {

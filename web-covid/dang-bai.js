@@ -1,3 +1,5 @@
+CKEDITOR.replace( 'noiDung' );
+
 function DangBai() {
     var baiViet = {
         tieuDe: "",
