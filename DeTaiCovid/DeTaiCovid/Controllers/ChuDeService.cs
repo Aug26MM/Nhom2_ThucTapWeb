@@ -17,19 +17,19 @@ namespace DeTaiCovid.Controllers
         
         public bool ThemChuDe(ChuDe newChuDe)
         {
-
             ChuDe currentChuDe = DbContext.ChuDes.SingleOrDefault(x => x.ChuDeid == newChuDe.ChuDeid);
-            if (currentChuDe == null)
+            ChuDe tenChuDe = DbContext.ChuDes.SingleOrDefault(x => x.TenChuDe.ToLower() == newChuDe.TenChuDe.ToLower());
+
+            if (currentChuDe != null || tenChuDe != null)
+            {
+                return false;
+                
+            }
+            else
             {
                 DbContext.ChuDes.Add(newChuDe);
                 DbContext.SaveChanges();
                 return true;
-              
-            }
-            else
-            {
-                return false;
-
             }
         }
 

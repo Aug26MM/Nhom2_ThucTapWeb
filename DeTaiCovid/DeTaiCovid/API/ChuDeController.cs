@@ -35,11 +35,11 @@ namespace DeTaiCovid.API
             bool check = ChuDeService.ThemChuDe(newChuDe);
             if (check == true)
             {
-                return Ok($"Thêm Bài viết{newChuDe.ChuDeid} thành công");
+                return Ok($"Thêm chủ đề{newChuDe.ChuDeid} thành công");
             }
             else
             {
-                return BadRequest($"Thêm bài viết {newChuDe.ChuDeid} Thất bại");
+                return BadRequest($"Thêm chủ đề {newChuDe.ChuDeid} Thất bại");
             }
         }
         [HttpPut]
