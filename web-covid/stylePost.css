@@ -74,8 +74,12 @@ header {
     float: left;
 }
 
+#tile h3.tile__page {
+    width: 250px;
+}
+
 #tile h3.button {
-    margin-left: 1170px;
+    margin-left: 1140px;
     margin-top: -1px;
 }
 
@@ -131,12 +135,44 @@ header {
 #input {
     border: 2px dashed #b1154a;
     width: 1500px;
-    height: 480px;
     margin-top: 10px;
 }
 
+#input h3.button{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 1380px;
+}
+
+#input h3.button button {
+    height: 30px;
+    cursor: pointer;
+    width: 100px;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+}
+
+#input h3.button button:hover {
+    background-color: #ffcccc;
+    transition: ease-in 0.2s;
+    -moz-transition: ease-in 0.2s;
+    -webkit-transition: ease-in 0.2s;
+    border: 1px solid #ccccff;
+}
+
+
 #input p {
     float: left;
+}
+
+#input h3.button button.post p.img img {
+    margin-top: 2px;
+    margin-left: 5px;
+}
+
+#input h3.button button.post p.name-button {
+    margin-top: 3px;
+    font-family: "Merriweather", serif;
 }
 
 #tile-port {
@@ -276,7 +312,6 @@ header {
     margin-top: 20px;
     margin-left: 10px;
     width: 1470px;
-    height: 200px;
     max-width: 1470px;
     margin-bottom: 5px;
 }
@@ -298,9 +333,6 @@ header {
 }
 
 #content textarea {
-    margin-top: 10px;
-    resize: none;
-    width: 1470px;
 }
 footer {
     margin-top: 150px;
